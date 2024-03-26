@@ -5,3 +5,9 @@
 ```bash
 $ python main.py
 ```
+
+I am a **normal** _text_
+
+- First
+- Second
+- Third

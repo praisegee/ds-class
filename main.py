@@ -3,7 +3,7 @@ A Python Capstone Project for Data Science class.
     Title: DSBank
 """
 
-from account import open_account
+from account import Account, open_account
 
 OPTIONS = {
     "1": open_account,
@@ -52,7 +52,7 @@ def app():
     else:
         OPTIONS[option]()
 
-    print("Option I typed is: ", option)
+    Account.get_all_accounts()
 
 
 if __name__ == "__main__":
