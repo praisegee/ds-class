@@ -5,17 +5,11 @@ A Python Capstone Project for Data Science class.
 
 from account import Account, open_account
 
-OPTIONS = {
-    "1": open_account,
-    "2": ...,
-    "3": ...,
-    "4": ...,
-    "5": ...,
-}
+OPTIONS = {"1": open_account, "2": ..., "3": ..., "4": ..., "5": ..., "6": exit}
 
 
 def validate_option(option):
-    if option not in ["1", "2", "3", "4", "5"]:
+    if option not in ["1", "2", "3", "4", "5", "6"]:
         return False
     return True
 
@@ -33,8 +27,9 @@ def get_option():
         3. Deposit.
         4. Withdraw.
         5. Make Transfer.
+        6. Exit program.
         
-    Enter any of the options from 1 to 5.
+    Enter any of the options from 1 to 6.
     ==========> """
     return input(option_text)
 
@@ -52,6 +47,7 @@ def app():
     else:
         OPTIONS[option]()
 
+    # Get all accounts
     Account.get_all_accounts()
 
 

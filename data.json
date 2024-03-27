@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Good Mummy Bad Mummy",
+    "author": "Shown Packer",
+    "price": 23.6,
+    "is_sold_out": true,
+    "shop": null
+  },
+  {
+    "id": 2,
+    "title": "Rich Dad Poor Dad",
+    "author": "Micheal Jackson",
+    "price": 63.6,
+    "is_sold_out": false,
+    "shop": "Gbagi"
+  }
+]

@@ -25,12 +25,11 @@ class Account:
         return f"{self.full_name} -- {self.account_number}"
 
     def __repr__(self) -> str:
-        return f"Account({self.full_name}, {self.email}, {self.phone_number}, {self.address}, {self.pin})"
+        return f"Account('{self.full_name}', '{self.email}', '{self.phone_number}', '{self.address}', '{self.pin}')"
 
-    @classmethod
-    def get_all_accounts(cls):
-        for account in db.ACCOUNTS:
-            print(account)
+    @staticmethod
+    def get_all_accounts():
+        db.get_all_accounts()
 
     @staticmethod
     def generate_account_number():
@@ -83,7 +82,9 @@ def open_account() -> Account:
     # )
 
     # save user into database (ACCOUNTS)
-    db.ACCOUNTS.append(new_user.obj_to_dict())
+    # db.ACCOUNTS.append(new_user.obj_to_dict())
+
+    db.add_to_db(new_user.obj_to_dict())
 
 
 # TODO: Future features

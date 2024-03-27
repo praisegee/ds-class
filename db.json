@@ -1,0 +1,29 @@
+[
+    {
+        "full_name": "PraiseGod",
+        "email": "me@you.com",
+        "phone_number": "12673487",
+        "address": "My address",
+        "pin": "1234",
+        "transactions": [],
+        "account_number": "9896338455"
+    },
+    {
+        "full_name": "Eminence",
+        "email": "abc@mm.com",
+        "phone_number": "9393939393",
+        "address": "New address street",
+        "pin": "6789",
+        "transactions": [],
+        "account_number": "9997642431"
+    },
+    {
+        "full_name": "John",
+        "email": "johndoe@mail.com",
+        "phone_number": "232323232",
+        "address": "Another address",
+        "pin": "1111",
+        "transactions": [],
+        "account_number": "7551678786"
+    }
+]
