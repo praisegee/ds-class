@@ -3,9 +3,16 @@ A Python Capstone Project for Data Science class.
     Title: DSBank
 """
 
-from account import Account, open_account
+from account import Account
 
-OPTIONS = {"1": open_account, "2": ..., "3": ..., "4": ..., "5": ..., "6": exit}
+OPTIONS = {
+    "1": Account.open_account,
+    "2": Account.login,
+    "3": ...,
+    "4": ...,
+    "5": ...,
+    "6": exit,
+}
 
 
 def validate_option(option):
@@ -37,18 +44,18 @@ def get_option():
 def home():
     """Welcome the user and ask the user what to do."""
     welcome()
-
-
-def app():
-    welcome()
     option = get_option()
     if not validate_option(option):
         print("Option not valid.")
     else:
         OPTIONS[option]()
 
+
+def app():
+    home()
+
     # Get all accounts
-    Account.get_all_accounts()
+    # Account.get_all_accounts()
 
 
 if __name__ == "__main__":

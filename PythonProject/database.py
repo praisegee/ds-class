@@ -23,8 +23,22 @@ def get_all_accounts():
     with open("db.json", "r") as f:
         accounts = json.load(f)
 
-    for account in accounts:
-        print(account)
+    return accounts
+
+
+def update_account(account):
+    data = [
+        acc
+        for acc in get_all_accounts()
+        if acc["account_number"] != account["account_number"]
+    ]
+
+    for acc in get_all_accounts():
+        if acc["account_number"] == account["account_number"]:
+            for k, v in account.items():
+                acc[k] = v
+
+        data.append(acc)
 
 
 # ACCOUNTS = [
