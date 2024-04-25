@@ -9,4 +9,4 @@ df = pd.DataFrame(data)
 
 # print(df.head())
 
-df.to_csv("data.csv")
+df.to_csv("data.csv", index=False)
